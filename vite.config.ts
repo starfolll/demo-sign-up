@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   clearScreen: false,
+  base: '/demo-sign-up/',
 
   plugins: [react()],
 
@@ -11,7 +12,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         api: 'modern',
-      }
-    }
-  }
+      },
+    },
+  },
 })
